@@ -1,0 +1,55 @@
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+
+}
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+
+/*
+tbody{
+	    vertical-align: middle;
+}
+*/
+
+.dataTables_filter {
+/*   width: 50%;
+   float: right;
+   text-align: right;*/
+}
+
+/*table.dataTable tbody td {
+  vertical-align: top;
+}
+
+*/
+table.dataTable tbody td {
+    vertical-align: middle;
+}
+
+#footer{
+	background: white; height: 100px; margin-top: 100px; color: white; padding: 40px; color: black;
+}
+
+
+.nav-link{
+	color: #bbbbbb;
+}
+
+/*.nav-item .nav-link a:hover{
+	color: yellow !important;
+}*/
+
+#navbarDropdown:hover{
+	color: #b4cd58 !important;
+}
+
+/*.dropdown-item:hover{
+	background: #b4cd58;
+}*/
+
+#footer {
+  height: 50px; /* the footer's total height */
+}
+

@@ -50,7 +50,7 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ date('d-m-Y H:i:s')}}
 
-                                    {{ ucfirst(Auth::user()->rol->nombre)." | "."Bienvenido: ".Auth::user()->empleado->nombres." ".Auth::user()->empleado->apepaterno." ".Auth::user()->empleado->apematerno }} <span class="caret"></span>
+                                    {{ " | ".ucfirst(Auth::user()->rol->nombre)." | "."Bienvenido: ".Auth::user()->empleado->nombres." ".Auth::user()->empleado->apepaterno." ".Auth::user()->empleado->apematerno }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

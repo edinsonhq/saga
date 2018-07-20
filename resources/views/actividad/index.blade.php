@@ -236,19 +236,7 @@
 		        	            	                            	 
 		        	            	                    }
 		        	            	        		
-		        	            	        			// if (data.estado_id == 0) {
-
-		        	            	        			//     return "<button class='btn btn-info btn-sm'>Elegir</button>";
-
-		        	            	        			// }else if(data.estado_id==1){
-
-		        	            	        			// 	  if(data.empleado_id==empleadoSesion){
-
-		        	            	        			// 	  	return "<button class='btn btn-warning btn-sm'>Desasignar</button>";
-		        	            	        			// 	  }else{
-		        	            	        			// 	  	return "<span class='badge badge-pill badge-danger'>Asignado a otro usuario</span>";
-		        	            	        			// 	  }
-		        	            	        			// }
+		        	            	        		
 		        	            	        	}else if(empleadoRol==3){
 		        	            	        			if (data.estado_id == 0) {
 
@@ -282,7 +270,7 @@
 		        	            	 
 
 		        	            	                            	  // return "<span class='badge badge-pill badge-danger'>"+empleadoAsignado+"Asignado a otro usuario</span>";
-		        	            	                            	  return "<span class='badge badge-pill badge-danger'>Asignado al </span>";
+		        	            	                            	  return "<span class='badge badge-pill badge-danger'>Asignado a otro usuario </span>";
 
 		        	            	                            }
 		        	            	                    }

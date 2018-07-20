@@ -34,8 +34,13 @@ class ActividadController extends Controller
         //            ->removeColumn('password')
         //            ->make(true);
 
+        $Fechaactual= Carbon::now();
+        $FechaactualFormato = $Fechaactual->format('Y-m-d');
+        //formateando a la fecha del excel "2018-07-19T00:00:00"
+        $FechaFormato  = $FechaactualFormato."T00:00:00";
 
-               $actividades = Actividad::select(['id',
+
+               $actividades = Actividad::where('fecha_pactada','=',$FechaFormato)->select(['id',
                                                  'producto_descripcion',
                                                  'ruta_localidad',
                                                  'cantidad',
@@ -81,9 +86,16 @@ class ActividadController extends Controller
 
     //
       public function index(){
-        
-            $actividades = Actividad::orderBy('id','asc')->paginate(10);
 
+
+        // $Fechaactual= Carbon::now();
+        // $FechaactualFormato = $Fechaactual->format('Y-m-d');
+        
+        // //formateando a la fecha del excel "2018-07-19T00:00:00"
+        // $FechaFormato  = $FechaactualFormato."T00:00:00";
+
+        $actividades = Actividad::orderBy('id','asc')->paginate(10);
+        // dd( $actividades);
         return view("actividad.index",compact("actividades"));
       
       }
